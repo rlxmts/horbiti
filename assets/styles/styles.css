@@ -6,10 +6,20 @@
   list-style: none;
   text-decoration: none;
   text-transform: none;
-  font-style: none;
+}
+
+.esconder {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
 }
 
 .banner {
   background: rgb(42, 27, 106);
-  background: linear-gradient(212deg, rgb(42, 27, 106) 53%, rgb(85, 27, 130) 100%);
+  background: linear-gradient(212deg, rgb(42, 27, 106) 43%, rgb(85, 27, 130) 100%);
+}
+
+.cabecalho {
+  padding: 2rem 1.5rem;
 }/*# sourceMappingURL=styles.css.map */
