@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  list-style: none;
+  text-decoration: none;
+  text-transform: none;
+  font-style: none;
+}
+
+.banner {
+  background: rgb(42, 27, 106);
+  background: linear-gradient(212deg, rgb(42, 27, 106) 53%, rgb(85, 27, 130) 100%);
+}/*# sourceMappingURL=styles.css.map */
