@@ -12,7 +12,7 @@
     padding: 100px 1.5rem;
     svg{
         position: absolute;
-        bottom: 0;
+        bottom:0;
         left: -25%;
         width: calc(150% + 1.3px);
         height: 200px;
@@ -48,6 +48,7 @@
                 p{
                     font-size: .8rem;
                     margin: 5px 0;
+                    color: variaveis.$branco;
                 }
             }
             button{

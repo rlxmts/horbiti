@@ -63,6 +63,7 @@
 }
 
 @mixin titulo(){
+    margin: 1rem 0;
     font-size: 2rem;
     color: variaveis.$preto;
     max-width: 700px;

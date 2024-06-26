@@ -68,10 +68,16 @@ h2 {
 }
 
 h3 {
+  margin: 1rem 0;
   font-size: 2rem;
   color: #000000;
   max-width: 700px;
   font-weight: 400;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 p {
@@ -145,6 +151,7 @@ strong {
 .banner_container .textos blockquote p {
   font-size: 0.8rem;
   margin: 5px 0;
+  color: #FFFFFF;
 }
 .banner_container .textos button {
   margin: 1rem 0;
@@ -238,11 +245,18 @@ strong {
   justify-content: space-between;
   align-items: center;
 }
-.sobre_container .box img {
-  width: 80%;
-  max-width: 300px;
+.sobre_container .box_img {
+  display: grid;
+  place-items: center;
+  width: 40%;
+}
+.sobre_container .box_img img {
+  max-width: 200px;
   border-radius: 50%;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4117647059);
+}
+.sobre_container .box_textos {
+  width: 55%;
 }
 
 .portfolio .lista_cards {
@@ -323,4 +337,128 @@ strong {
   border-radius: 20px;
   padding: 0.5rem;
   color: #fe623e;
+}
+
+.chamada {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: #0288ed;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3882352941);
+}
+.chamada div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 0;
+  flex-direction: column;
+  text-align: center;
+}
+.chamada div h3, .chamada div p {
+  color: #FFFFFF;
+}
+.chamada div h3 {
+  font-size: 1rem;
+}
+.chamada div p {
+  font-size: 3rem;
+}
+.chamada div button {
+  background-color: #0288ed;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 200px;
+  padding: 0.5rem 1rem;
+  border: none;
+  color: #FFFFFF;
+  font-weight: 400;
+  transition: 0.3s;
+  cursor: pointer;
+  background-color: #fe623e;
+  color: #FFFFFF;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 2rem;
+}
+.chamada div button:hover {
+  background-color: #fe623e;
+}
+.chamada div button:hover {
+  background-color: #FFFFFF;
+  color: #0288ed;
+}
+
+.duvidas {
+  padding: 10rem 1.5rem;
+}
+.duvidas ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+}
+.duvidas ul li {
+  border: 1px solid #898a98;
+  width: 100%;
+  height: 60px;
+  max-width: 550px;
+  padding: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.duvidas ul li h4 {
+  position: relative;
+  margin-bottom: 2rem;
+}
+.duvidas ul li h4::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: -5px;
+  top: 0;
+  background-image: url("../img/add.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.duvidas ul .ativo {
+  height: 200px;
+}
+.duvidas ul .ativo:nth-child(1), .duvidas ul .ativo:nth-child(2) {
+  height: 170px;
+}
+.duvidas ul .ativo:nth-child(3) {
+  height: 150px;
+}
+.duvidas ul .ativo h4::after {
+  animation: rodar 0.3s linear;
+}
+@keyframes rodar {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+.duvidas ul .inativo h4::after {
+  animation: fechar 0.3s linear;
+}
+@keyframes fechar {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-180deg);
+  }
 }/*# sourceMappingURL=styles.css.map */

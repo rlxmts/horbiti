@@ -1,7 +1,11 @@
+@use './abstract/fonts';
 @use './abstract/root';
 @use './abstract/variaveis';
 @use './abstract/mixins';
+@use './abstract/responsive';
 @use './components/banner';
 @use './components/cabecalho';
 @use './components/sobre';
 @use './components/portfolio';
+@use './components/chamada';
+@use './components/duvidas';

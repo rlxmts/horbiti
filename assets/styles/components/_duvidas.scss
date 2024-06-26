@@ -1,0 +1,66 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+.duvidas{
+    padding: 10rem 1.5rem;
+    
+    ul{
+        @include mixins.flex-j-a-g(space-between, start, 2rem);
+        flex-direction: column;
+
+        li{
+            border: 1px solid variaveis.$cinza;
+            width: 100%;
+            height: 60px;
+            max-width: 550px;
+            padding: 1rem; 
+            border-radius: 20px;
+            cursor: pointer;
+            overflow: hidden;
+            transition: .5s;
+            
+            h4{
+                position: relative;
+                margin-bottom: 2rem;
+                
+                &::after{
+                    content: '';
+                    display: block;
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    right: -5px;
+                    top: 0;
+                    background-image: url('../img/add.svg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+            }
+        }
+        .ativo{
+            height: 200px;
+        }
+
+        .ativo:nth-child(1), .ativo:nth-child(2){height: 170px;}
+        .ativo:nth-child(3){height: 150px;}
+
+        .ativo h4::after{
+            animation: rodar .3s linear ;
+        }
+
+        @keyframes rodar {
+            0%{ transform: rotate(0);}
+            100%{ transform: rotate(180deg);}
+        }
+
+        .inativo h4::after{
+            animation: fechar .3s linear;
+        }
+
+        @keyframes fechar {
+            0%{transform: rotate(0);}
+            100%{transform: rotate(-180deg);}
+        }
+    }
+}
