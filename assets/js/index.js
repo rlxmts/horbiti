@@ -5,6 +5,10 @@ cardImage.forEach( card => {
     card.onmousemove = ()=> {
         pointer.style.display = 'none';
     }
+
+    card.ontouchmove = ()=> {
+        pointer.styled.display ='none';
+    }
     card.onmouseout = ()=> {
         pointer.style.display = 'grid';
     }

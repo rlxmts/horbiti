@@ -248,9 +248,10 @@ strong {
 .portfolio .lista_cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: space-between;
+  gap: 2rem;
+  justify-content: center;
   align-items: center;
+  margin-top: 4rem;
 }
 .portfolio .lista_cards li {
   max-width: 250px;
@@ -301,4 +302,25 @@ strong {
 }
 .portfolio .lista_cards li .card_img .card_img ~ .scroll {
   display: none;
+}
+.portfolio .lista_cards li h4 {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  color: #fe623e;
+  font-weight: 400;
+}
+.portfolio .lista_cards li p {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.portfolio .lista_cards li a {
+  font-size: 0.8rem;
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin: 1rem 0;
+  border: 1px solid #fe623e;
+  border-radius: 20px;
+  padding: 0.5rem;
+  color: #fe623e;
 }/*# sourceMappingURL=styles.css.map */

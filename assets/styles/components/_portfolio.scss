@@ -4,8 +4,8 @@
 .portfolio{
 
     .lista_cards{
-        @include mixins.flex-j-a-g( space-between, center, 1rem);
-
+        @include mixins.flex-j-a-g( center, center, 2rem);
+        margin-top: 4rem;
         li{
             max-width: 250px;
 
@@ -55,6 +55,30 @@
                 .card_img ~ .scroll{
                     display: none;
                 }
+            }
+
+            h4{
+                font-size: 1.1rem;
+                margin: 1rem 0;
+                color: variaveis.$laranja;
+                font-weight: 400;
+            }
+
+            p{
+                font-size: .8rem;
+                font-weight: 400;
+            }
+
+            a{
+                font-size: .8rem;
+                text-align: center;
+                width: 100%;
+                display: block;
+                margin: 1rem 0;
+                border: 1px solid variaveis.$laranja;
+                border-radius: 20px;
+                padding: .5rem;
+                color: variaveis.$laranja;
             }
         }
     }
