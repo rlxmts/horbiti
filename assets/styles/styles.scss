@@ -2,7 +2,6 @@
 @use './abstract/root';
 @use './abstract/variaveis';
 @use './abstract/mixins';
-@use './abstract/responsive';
 @use './components/banner';
 @use './components/cabecalho';
 @use './components/sobre';
@@ -10,3 +9,4 @@
 @use './components/chamada';
 @use './components/duvidas';
 @use './components/contato';
+@use './abstract/responsive';

@@ -25,7 +25,7 @@
         background-color: #0000008f;
     }
 
-    h3, p, button, h2 { 
+    h3, p, a, h2 { 
         color: variaveis.$branco;
         z-index: 1;
         position: relative;
@@ -35,7 +35,9 @@
         font-size: 3rem;
     }
 
-    button{
+    a{
+        @include mixins.botao();
+        display: block;
         max-width: 300px;
         margin: 1rem 0;
     }

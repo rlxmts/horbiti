@@ -4,10 +4,11 @@
 
 .cabecalho{
     @include mixins.flex-j-a-g(center, center, 0);
-    // position: fixed;
+    position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 9999;
     padding: 4rem 1.5rem;
+    transition: 1s;
     
     &_container{
         @include mixins.flex-j-a-g(space-between, center, 1rem);
@@ -32,4 +33,19 @@
             }
         }
     }
+}
+
+.cabecalho-ativo {
+    background-color: variaveis.$azul;
+    padding: 1.5rem;
+    box-shadow: 0px 0px 10px #0000007c;
+}
+
+.cabecalho-ativo .navegacao ul a{
+    padding-bottom: 0;
+    border: none;
+}
+.cabecalho-ativo .navegacao ul a:hover{
+    color: variaveis.$branco;
+    border-bottom:1px solid variaveis.$branco;
 }
