@@ -1,0 +1,61 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+.portfolio{
+
+    .lista_cards{
+        @include mixins.flex-j-a-g( space-between, center, 1rem);
+
+        li{
+            max-width: 250px;
+
+            .card_img{
+                height: 200px;
+                overflow: hidden;
+                overflow-y: scroll;
+                position: relative;
+                cursor: pointer;
+                
+                img{
+                    width: 100%;    
+                }
+
+                .scroll{   
+                    place-items: center;                 
+                    width: 250px;
+                    height: 200px;
+                    display: grid;
+                    background-color: #00000052;
+                    position: absolute;
+                    top: 0;
+                    left: 0;   
+                    
+                    img{
+                        width: 50px;
+                        animation: saltar 2s linear infinite;
+                    }
+                    @keyframes saltar {
+                        0%{transform: translateY(0px);}
+                        50%{transform: translateY(-20px);}
+                        100%{transform: translateY(0px);}
+                    }
+                }
+
+                &::-webkit-scrollbar{
+                    width: 5px;
+                    border-radius: 5px;
+                    background-color: variaveis.$laranja;
+                }
+
+                &::-webkit-scrollbar-thumb{
+                    background-color: #ffab7a;
+                    border-radius: 5px;
+                }  
+                
+                .card_img ~ .scroll{
+                    display: none;
+                }
+            }
+        }
+    }
+}

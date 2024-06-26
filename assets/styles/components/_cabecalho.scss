@@ -1,3 +1,35 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+
 .cabecalho{
-    padding: 2rem 1.5rem;
+    @include mixins.flex-j-a-g(center, center, 0);
+    // position: fixed;
+    width: 100%;
+    z-index: 1;
+    padding: 4rem 1.5rem;
+    
+    &_container{
+        @include mixins.flex-j-a-g(space-between, center, 1rem);
+        padding: 0;
+        width: 100%;
+
+        .logo{
+            width: 150px;
+    
+            img{
+                width: 100%;
+            }
+        }
+
+        .navegacao{
+
+            ul{
+                @include mixins.flex-j-a-g(center, center, 1rem);
+                a{
+                    @include mixins.links();
+                }
+            }
+        }
+    }
 }

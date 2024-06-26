@@ -5,83 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/styles/styles.css" >
+    <script src="./assets/js/index.js" defer></script>
     <title>Horbiti - Criação de Sites Profissionais</title>
 </head>
 <body>
     <a href="#principal" class="esconder">Pular para conteúdo principal</a>
     <header class="cabecalho">
-        <a href="/">
-            <img src="./assets/img/logo.webp"/>
-        </a>
-        <nav>
-            <ul>
-                <li><a href="#" id="subir">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="cabecalho_container container">
+            <a class="logo" href="/">
+                <img src="./assets/img/logo.webp"/>
+            </a>
+            <nav class="navegacao">
+                <ul>
+                    <li><a href="#" id="subir">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="banner">
-            <div>
-                <h1>Criação de sites</h1>
-                <h2>Sites <strong>Profissionais</strong> 
-                <br> para Impulsionar Seu Negócio</h2>
-                <blockquote cite="">
-                    <q>No Futuro vão existir dois tipos de empresas: as que fazem negócios pela Internet e as que estão fora dos negócios. </q>
-                    <p>- Bill Gates</p>
-                </blockquote>
-                <button>Orçamento Grátis</button>
-            </div>            
-            <div>
-                <div><img src="./assets/img/banner.png" alt=""></div>
-                <div><img src="./assets/img/banner-fundo.png" alt=""></div>
-            </div>      
+            <div class="banner_container container">
+                <div class="textos">
+                    <h1 id="principal">Criação de sites</h1>
+                    <h2>Sites <strong>Profissionais</strong> 
+                    <br> para Impulsionar Seu Negócio</h2>
+                    <blockquote cite="">
+                        <q>No Futuro vão existir dois tipos de empresas: as que fazem negócios pela Internet e as que estão fora dos negócios. </q>
+                        <p>- Bill Gates</p>
+                    </blockquote>
+                    <button>Orçamento Grátis</button>
+                </div>            
+                <div class="imagens">
+                    <div><img src="./assets/img/banner.png" alt=""></div>
+                    <div><img src="./assets/img/banner-fundo.png" alt=""></div>
+                </div>      
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                <path class="elementor-shape-fill" fill="white" d="M500,97C126.7,96.3,0.8,19.8,0,0v100l1000,0V1C1000,19.4,873.3,97.8,500,97z"></path>
+            </svg>              
         </section>
         <section class="sobre">
-            <div>
-                <img src="./assets/img/matheus.jpeg" alt="Desenvolvedor Matheus Cruz">
-            </div>
-            <div>
+            <div class="sobre_container container">
                 <h2>Sobre a Horbiti</h2>
                 <h3>Quem é o Desenvolvedor?</h3>
-                <p>Olá, muito prazer!</p>
-                <div>
-                    <p>Me chamo Matheus e sou desenvolvedor front-end com 4 anos de experiência no mercado de desenvolvimento de sites. Graduando em Análise e Desenvolvimento de Sistemas e, ao longo da minha carreira, contribuí para o crescimento de diversas empresas em setores como e-commerce, serviços, hotéis e pousadas.</p>
-                    <p>Sou apaixonado pelo meu trabalho e dedicar tempo e carinho nos projetos gerou grande reconhecimento! Prova disso é que no Google o perfil da <strong>Horbiti</strong> nos resultados de pesquisas contam com mais de 50 avaliações e nota maxima do google.</p>
-                    <p>Estou em busca de parceiros, que estejam dispostos a alavancarem seus negócios. Estou aqui para cuidar de toda a parte digital do seu negócio e ansioso para podermos trabalhar juntos.</p>
+                <p class="tracinho">Olá, muito prazer!</p>                         
+                <div class="box">
+                    <img src="./assets/img/matheus.jpeg" alt="Desenvolvedor Matheus Cruz">                                  
+                    <div class="box_textos">
+                        <p>Me chamo Matheus e sou desenvolvedor front-end com 4 anos de experiência no mercado de desenvolvimento de sites. Graduando em Análise e Desenvolvimento de Sistemas e, ao longo da minha carreira, contribuí para o crescimento de diversas empresas em setores como e-commerce, serviços, hotéis e pousadas.</p><br>
+                        <p>Sou apaixonado pelo meu trabalho e dedicar tempo e carinho nos projetos gerou grande reconhecimento! Prova disso é que no Google o perfil da <strong>Horbiti</strong> nos resultados de pesquisas contam com mais de 50 avaliações e <strong>nota máxima</strong> do google.</p><br>
+                        <p>Estou em busca de parceiros, que estejam dispostos a alavancarem seus negócios. Estou aqui para cuidar de toda a parte digital do seu negócio e ansioso para podermos trabalhar juntos.</p>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio container">
             <h2>Serviços</h2>
-            <p>Últimos trabalhos realizados.</p>
+            <h3>Soluções Criativas e Atraentes</h3>
+            <p class="tracinho">Últimos trabalhos realizados.</p>
+            <ul class="lista_cards">
                 <li>
+                    <div class="card_img">
+                        <span class="scroll">
+                            <img src="./assets/img/touch.svg" alt="">
+                        </span>
+                        <img src="./assets/img/vilaamale.webp" alt="">
+                    </div>
                     <a href="https://vilaamale.com.br/" target="_blank" rel="noopener noreferrer">
-                        <img src="" alt="">
                         <h4>Vila Amalê</h4>
                         <p>Desenvolvido com WordPress - Layout - Sistema de Agendamento - SEO</p>
                     </a>
                 </li>
                 <li>
+                    <div class="card_img">
+                        <span class="scroll">
+                            <img src="./assets/img/touch.svg" alt="">
+                        </span>
+                        <img src="./assets/img/santorini.webp" alt="">
+                    </div>
                     <a href="https://santorini-mu.vercel.app/" target="_blank" rel="noopener noreferrer">
-                        <img src="" alt="">
                         <h4>Santorini</h4>
                         <p>Desemvolvido com JavaScript - Layout - SEO - Institucional </p>
                     </a>
                 </li>
                 <li>
+                    <div class="card_img">
+                        <span class="scroll">
+                            <img src="./assets/img/touch.svg" alt="">
+                        </span>
+                        <img src="./assets/img/maximus.webp" alt="">
+                    </div>
                     <a href="https://maximus-xi.vercel.app/" target="_blank" rel="noopener noreferrer">
-                        <img src="" alt="">
                         <h4>Maximus Segurança</h4>
                         <p>Desenvolvido com JavaScript - Layout - SEO - One Page </p>
                     </a>
                 </li>
-                </li>
                 <li>
+                    <div class="card_img">
+                        <span class="scroll">
+                            <img src="./assets/img/touch.svg" alt="">
+                        </span>
+                        <img src="./assets/img/riogrande.webp" alt="">
+                    </div>
                     <a href="https://pousadariogrande.com.br/" target="_blank" rel="noopener noreferrer">
-                        <img src="" alt="">
                         <h4>Pousada Rio Grande</h4>
                         <p>Desenvolvido com WordPress - Layout - SEO - Institucional</p>
                     </a>
@@ -90,7 +119,7 @@
         </section>
         <section class="chamada">
             <h3>Orçamento Gratuito</h3>
-            <p>Vamos trabalhar juntos?</p>
+            <p class="tracinho">Vamos trabalhar juntos?</p>
             <button>Solicitar Orçamento</button>
         </section>
         <section class="duvidas">

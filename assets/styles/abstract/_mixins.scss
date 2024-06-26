@@ -1,6 +1,94 @@
+@use './variaveis';
+
 @mixin esconderConteudo(){
     position: absolute;
     left: -9999px;
     width: 1px;
     height: 1px;
+}
+
+@mixin botao(){
+    background-color: variaveis.$azul;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 200px;
+    padding: .5rem 1rem;
+    border: none;
+    color: variaveis.$branco;
+    font-weight: 400;
+    transition: .3s;
+    cursor: pointer;
+
+    &:hover{
+        background-color: variaveis.$laranja;
+    }
+}
+
+@mixin flex-j-a-g($justificar, $alinhar, $gap){
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap;
+    justify-content: $justificar;
+    align-items: $alinhar;
+}
+
+@mixin container(){
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 1.5rem;
+}
+
+@mixin links(){
+    display: block;
+    color: #fff;    
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+    
+    &:hover{
+        border-bottom: 1px solid variaveis.$laranja;
+        color: variaveis.$laranja;
+    }
+}
+
+@mixin subtitulo-maiusculo(){
+    color: variaveis.$laranja;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+@mixin titulo(){
+    font-size: 2rem;
+    color: variaveis.$preto;
+    max-width: 700px;
+    font-weight: 400;
+}
+
+@mixin texto(){
+    max-width: 700px;
+    color: variaveis.$preto;
+    max-width: 700px;
+    line-height: 1.4;
+}
+
+@mixin tracinho(){
+    margin:0 0 1rem 35px ;
+    position: relative;
+
+    &::before{
+        content: '';
+        width: 30px;
+        height: 2px;
+        background-color: variaveis.$laranja;
+        display: block;
+        position: absolute;
+        left: -35px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }

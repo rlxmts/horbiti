@@ -1,4 +1,6 @@
+@use './fonts';
 @use './mixins';
+@use './variaveis';
 
 *{
     padding: 0;
@@ -8,8 +10,35 @@
     list-style: none;
     text-decoration: none;
     text-transform: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
 }
 
 .esconder {
     @include mixins.esconderConteudo();
+}
+
+.container{
+    @include mixins.container();
+}
+
+.tracinho{
+    @include mixins.tracinho();
+}
+
+h2{
+    @include mixins.subtitulo-maiusculo();
+}
+
+h3{
+    @include mixins.titulo();
+}
+
+p{
+    @include mixins.texto();
+}
+
+strong{
+    font-weight: 600;
+    color: variaveis.$laranja;
 }
