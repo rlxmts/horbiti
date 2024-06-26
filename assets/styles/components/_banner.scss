@@ -73,6 +73,10 @@
             div:nth-child(1){
                 position: relative;
                 z-index: 1;
+
+                img{
+                    animation: saltar 5s reverse linear infinite;
+                }
             }
 
             div:nth-child(2){
@@ -80,6 +84,16 @@
                 top: 50%;
                 left: 5%;
                 transform: translateY(-50%);
+                
+                img{
+                    animation: saltar 5s ease-in-out infinite;
+                }
+            }
+
+            @keyframes saltar {
+                0%{ transform: translateY(0);}
+                50%{ transform: translateY(1px);}
+                100%{ transform: translateY(0);}
             }
         }
     }

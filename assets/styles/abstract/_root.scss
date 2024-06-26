@@ -14,6 +14,10 @@
     font-weight: 300;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .esconder {
     @include mixins.esconderConteudo();
 }
