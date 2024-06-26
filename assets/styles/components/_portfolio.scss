@@ -6,44 +6,46 @@
     .lista_cards{
         @include mixins.flex-j-a-g( center, center, 2rem);
         margin-top: 4rem;
+
+        li:hover .scroll {
+            display: none;
+        }
+        
         li{
-            max-width: 250px;
+            max-width: 250px;            
+            position: relative;
+
+            .scroll{   
+                place-items: center;                 
+                width: 250px;
+                height: 200px;
+                display: grid;
+                background-color: #00000052;
+                position: absolute;
+                top: 0;
+                left: 0;   
+                
+                img{
+                    width: 50px;
+                    animation: saltar 2s linear infinite;
+                }
+                @keyframes saltar {
+                    0%{transform: translateY(0px);}
+                    50%{transform: translateY(-20px);}
+                    100%{transform: translateY(0px);}
+                }
+            }
 
             .card_img{
                 height: 200px;
                 overflow: hidden;
                 overflow-y: scroll;
-                position: relative;
                 cursor: pointer;
                 
                 img{
                     width: 100%;    
                 }
 
-                .scroll{   
-                    place-items: center;                 
-                    width: 250px;
-                    height: 200px;
-                    display: grid;
-                    background-color: #00000052;
-                    position: absolute;
-                    top: 0;
-                    left: 0;   
-                    
-                    img{
-                        width: 50px;
-                        animation: saltar 2s linear infinite;
-                    }
-                    @keyframes saltar {
-                        0%{transform: translateY(0px);}
-                        50%{transform: translateY(-20px);}
-                        100%{transform: translateY(0px);}
-                    }
-
-                    &:hover{
-                        opacity: 0;
-                    }
-                }
 
                 &::-webkit-scrollbar{
                     width: 5px;

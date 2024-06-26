@@ -329,20 +329,14 @@ button:hover {
   align-items: center;
   margin-top: 4rem;
 }
+.portfolio .lista_cards li:hover .scroll {
+  display: none;
+}
 .portfolio .lista_cards li {
   max-width: 250px;
-}
-.portfolio .lista_cards li .card_img {
-  height: 200px;
-  overflow: hidden;
-  overflow-y: scroll;
   position: relative;
-  cursor: pointer;
 }
-.portfolio .lista_cards li .card_img img {
-  width: 100%;
-}
-.portfolio .lista_cards li .card_img .scroll {
+.portfolio .lista_cards li .scroll {
   place-items: center;
   width: 250px;
   height: 200px;
@@ -352,7 +346,7 @@ button:hover {
   top: 0;
   left: 0;
 }
-.portfolio .lista_cards li .card_img .scroll img {
+.portfolio .lista_cards li .scroll img {
   width: 50px;
   animation: saltar 2s linear infinite;
 }
@@ -367,8 +361,14 @@ button:hover {
     transform: translateY(0px);
   }
 }
-.portfolio .lista_cards li .card_img .scroll:hover {
-  opacity: 0;
+.portfolio .lista_cards li .card_img {
+  height: 200px;
+  overflow: hidden;
+  overflow-y: scroll;
+  cursor: pointer;
+}
+.portfolio .lista_cards li .card_img img {
+  width: 100%;
 }
 .portfolio .lista_cards li .card_img::-webkit-scrollbar {
   width: 5px;
