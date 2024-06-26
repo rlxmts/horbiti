@@ -147,6 +147,7 @@ button:hover {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 500;
+  margin: 1rem 0;
 }
 .banner_container .textos h2 {
   font-size: 3rem;
@@ -394,7 +395,7 @@ button:hover {
   gap: 0;
   justify-content: center;
   align-items: center;
-  padding: 10rem 0;
+  padding: 10rem 1.5rem;
   flex-direction: column;
   text-align: center;
 }

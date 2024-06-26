@@ -8,7 +8,7 @@
 
     div{
         @include mixins.flex-j-a-g(center, center, 0);
-        padding: 10rem 0;
+        padding: 10rem 1.5rem;
         flex-direction: column;
         text-align: center;
 
