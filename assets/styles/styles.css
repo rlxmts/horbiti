@@ -700,12 +700,11 @@ button:hover {
   .rodape {
     padding: 5rem 0;
   }
-  .rodape .subir {
-    width: 30px;
-    height: 30px;
+  .rodape .icon {
+    width: 30px !important;
   }
-  .rodape .subir .icon {
-    width: 30px;
-    height: 30px;
+  .rodape .icon-ativo {
+    width: 30px !important;
+    height: 30px !important;
   }
 }/*# sourceMappingURL=styles.css.map */
