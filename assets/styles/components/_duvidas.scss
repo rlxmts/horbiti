@@ -2,8 +2,7 @@
 @use '../abstract/mixins';
 
 .duvidas{
-    padding: 10rem 1.5rem;
-    
+    padding: 10rem 1.5rem 0 1.5rem;
     ul{
         @include mixins.flex-j-a-g(space-between, start, 2rem);
         flex-direction: column;
