@@ -546,7 +546,7 @@ button:hover {
     font-size: 1.5rem;
   }
   .cabecalho {
-    padding: 1.5rem;
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
   }
   .cabecalho_container {
     justify-content: center;
@@ -557,10 +557,14 @@ button:hover {
     font-size: 0.8rem;
     padding: 0 !important;
   }
+  .cabecalho-ativo {
+    padding: 1rem;
+  }
   .banner svg {
     height: 100px;
   }
   .banner_container {
+    padding: 5rem 0 0 0;
     flex-direction: column;
     gap: 2rem;
   }
