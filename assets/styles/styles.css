@@ -565,6 +565,59 @@ button:hover {
   background-color: #fe623e;
 }
 
+.rodape {
+  padding: 2rem 0;
+  background-color: rgb(32, 24, 24);
+  color: #FFFFFF;
+  text-align: center;
+}
+.rodape .wpp, .rodape .subir {
+  z-index: 99;
+  position: fixed;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5254901961);
+  cursor: pointer;
+  right: 20px;
+}
+.rodape .wpp {
+  display: block;
+  height: 50px;
+  width: 50px;
+  background-image: url("../img/wpp.png");
+  background-position: center;
+  background-size: contain;
+  bottom: 20px;
+  border-radius: 50%;
+}
+.rodape .subir {
+  background-color: black;
+  bottom: 80px;
+}
+.rodape .subir .icon {
+  position: relative;
+  display: block;
+  height: 0px;
+  width: 40px;
+  transition: 0.6s;
+  opacity: 0;
+}
+.rodape .subir .icon-ativo {
+  height: 40px;
+  opacity: 1;
+}
+.rodape .subir .icon-ativo::after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-image: url("../img/seta.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 @media screen and (max-width: 768px) {
   h3 {
     font-size: 1.5rem;
@@ -643,5 +696,16 @@ button:hover {
   }
   .contato p {
     font-size: 0.8rem;
+  }
+  .rodape {
+    padding: 5rem 0;
+  }
+  .rodape .subir {
+    width: 30px;
+    height: 30px;
+  }
+  .rodape .subir .icon {
+    width: 30px;
+    height: 30px;
   }
 }/*# sourceMappingURL=styles.css.map */
