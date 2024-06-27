@@ -615,6 +615,7 @@ button:hover {
 }
 .rodape .wpp a {
   font-size: 1px;
+  color: transparent;
 }
 .rodape .subir {
   background-color: black;
