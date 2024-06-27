@@ -592,7 +592,7 @@ button:hover {
 
 .rodape {
   padding: 2rem 0;
-  background-color: rgb(32, 24, 24);
+  background-color: #000000;
   color: #FFFFFF;
   text-align: center;
 }
@@ -707,7 +707,7 @@ button:hover {
     padding: 5rem 1.5rem;
   }
   .duvidas .pergunta {
-    padding: 1rem 2rem 1rem 1rem;
+    padding: 1rem 2rem 1rem 0;
     height: 70px;
   }
   .duvidas .pergunta h4 {
