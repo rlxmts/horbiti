@@ -726,7 +726,12 @@ button:hover {
     font-size: 0.8rem;
   }
   .rodape {
-    padding: 5rem 0;
+    padding: 1.5rem;
+  }
+  .rodape span {
+    display: block;
+    font-size: 0.8rem;
+    text-align: start;
   }
   .rodape .icon {
     width: 30px !important;

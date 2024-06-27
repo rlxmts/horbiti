@@ -106,7 +106,12 @@
     }
     
     .rodape{
-        padding: 5rem 0;
+        padding: 1.5rem;
+        span{
+            display: block;
+            font-size: .8rem;
+            text-align: start;
+        }
         .icon{
             width: 30px !important;
         }
