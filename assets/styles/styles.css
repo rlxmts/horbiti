@@ -613,6 +613,9 @@ button:hover {
   bottom: 20px;
   border-radius: 50%;
 }
+.rodape .wpp a {
+  font-size: 1px;
+}
 .rodape .subir {
   background-color: black;
   bottom: 80px;
