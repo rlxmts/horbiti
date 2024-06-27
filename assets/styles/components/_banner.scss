@@ -27,8 +27,10 @@
             h1{
                 @include mixins.subtitulo-maiusculo();
                 margin: 1rem 0;
+                animation: entrada 1s linear;
             }
             h2{
+                animation: entrada 1s linear;
                 font-size: 3rem; 
                 color: variaveis.$branco;  
                 text-transform: none;
@@ -41,6 +43,7 @@
             } 
 
             blockquote{ 
+                animation: entrada 1s linear;
                 margin-top: 1rem ;
                 q{ 
                     max-width: 500px;
@@ -55,6 +58,12 @@
             button{
                 margin: 1rem 0;
                 @include mixins.botao();
+                animation: entrada 1s linear;
+            }
+
+            @keyframes entrada {
+                0%{ transform:  translateY(30px); opacity: 0;}
+                100%{ transform:  translateY(0px); opacity: 1;}
             }
         }
 

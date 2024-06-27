@@ -113,6 +113,17 @@ button:hover {
   background-color: #fe623e;
 }
 
+.anima {
+  transform: translateY(30px);
+  opacity: 0;
+  transition: 1s;
+}
+
+.anima-ativo {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 .banner {
   display: flex;
   flex-wrap: wrap;
@@ -152,8 +163,10 @@ button:hover {
   letter-spacing: 1px;
   font-weight: 500;
   margin: 1rem 0;
+  animation: entrada 1s linear;
 }
 .banner_container .textos h2 {
+  animation: entrada 1s linear;
   font-size: 3rem;
   color: #FFFFFF;
   text-transform: none;
@@ -164,6 +177,7 @@ button:hover {
   color: #FFFFFF;
 }
 .banner_container .textos blockquote {
+  animation: entrada 1s linear;
   margin-top: 1rem;
 }
 .banner_container .textos blockquote q {
@@ -188,9 +202,20 @@ button:hover {
   transition: 0.3s;
   text-align: center;
   cursor: pointer;
+  animation: entrada 1s linear;
 }
 .banner_container .textos button:hover {
   background-color: #fe623e;
+}
+@keyframes entrada {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 .banner_container .imagens {
   width: 35%;
