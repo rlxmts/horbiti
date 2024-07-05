@@ -345,6 +345,16 @@ button:hover {
 .sobre_container .box_textos {
   width: 55%;
 }
+.sobre_container .box_textos .redes-sociais {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.sobre_container .box_textos .redes-sociais__item a {
+  display: block;
+  font-size: 1px;
+}
 
 .portfolio .lista_cards {
   display: flex;
