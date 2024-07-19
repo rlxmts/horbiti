@@ -470,10 +470,24 @@ button:hover {
 }
 .chamada div a {
   display: block;
+  background-color: #0288ed;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 200px;
+  padding: 0.5rem 1rem;
+  border: none;
+  color: #FFFFFF;
+  font-weight: 400;
+  transition: 0.3s;
+  text-align: center;
+  cursor: pointer;
   background-color: #fe623e;
   color: #FFFFFF;
   font-weight: 500;
   margin-top: 2rem;
+}
+.chamada div a:hover {
+  background-color: #fe623e;
 }
 .chamada div a:hover {
   background-color: #FFFFFF;
