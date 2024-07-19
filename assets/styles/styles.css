@@ -189,7 +189,8 @@ button:hover {
   margin: 5px 0;
   color: #FFFFFF;
 }
-.banner_container .textos button {
+.banner_container .textos a {
+  display: block;
   margin: 1rem 0;
   background-color: #0288ed;
   border-radius: 20px;
@@ -204,7 +205,7 @@ button:hover {
   cursor: pointer;
   animation: entrada 1s linear;
 }
-.banner_container .textos button:hover {
+.banner_container .textos a:hover {
   background-color: #fe623e;
 }
 @keyframes entrada {

@@ -55,7 +55,8 @@
                     color: variaveis.$branco;
                 }
             }
-            button{
+            a{
+                display: block;
                 margin: 1rem 0;
                 @include mixins.botao();
                 animation: entrada 1s linear;
