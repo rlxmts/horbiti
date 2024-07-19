@@ -22,7 +22,8 @@
         p{
             font-size: 3rem ;
         }
-        button{
+        a{
+            display: block;
             background-color: variaveis.$laranja;
             color: variaveis.$branco;
             font-weight: 500;
