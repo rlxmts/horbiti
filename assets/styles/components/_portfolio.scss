@@ -20,14 +20,14 @@
                 width: 250px;
                 height: 200px;
                 display: grid;
-                background-color: #00000052;
+                background-color: #22222252;
                 position: absolute;
                 top: 0;
                 left: 0;   
                 
                 img{
                     width: 50px;
-                    animation: saltar 2s linear infinite;
+                    animation: saltar 4s ease-in-out infinite;
                 }
                 @keyframes saltar {
                     0%{transform: translateY(0px);}

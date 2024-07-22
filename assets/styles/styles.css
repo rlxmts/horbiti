@@ -377,14 +377,14 @@ button:hover {
   width: 250px;
   height: 200px;
   display: grid;
-  background-color: rgba(0, 0, 0, 0.3215686275);
+  background-color: rgba(34, 34, 34, 0.3215686275);
   position: absolute;
   top: 0;
   left: 0;
 }
 .portfolio .lista_cards li .scroll img {
   width: 50px;
-  animation: saltar 2s linear infinite;
+  animation: saltar 4s ease-in-out infinite;
 }
 @keyframes saltar {
   0% {
